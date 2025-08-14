@@ -6,8 +6,7 @@
   background-color: #83DBDA;
   padding: 3vh;
 }
-html{
-  width: 100%;
+html, body{
   height: 100%;
 }
 a{
@@ -31,7 +30,7 @@ a:hover {
   border-radius: 5px;
 }
 main{
-  background-color: #D4A468;
+  background-color: #eeadf4;
 }
 footer{
   background-color: #5689F2;

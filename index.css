@@ -15,6 +15,21 @@ color: #000;
   font-size: 3vh;
   text-decoration: none;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 2.5vh;
+  padding: 10px;
+}
+a:hover {
+  color: white;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
 main{
   background-color: #D4A468;
 }
@@ -116,4 +131,14 @@ h1{
         .sobre-mi-container p {
             font-size: 1rem;
         }
+        @media (max-width: 600px) {
+  #cabecera {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  a {
+    font-size: 2.5vh;
+  }
+}
     }

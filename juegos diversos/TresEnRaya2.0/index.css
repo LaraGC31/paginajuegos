@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0vh;
+    padding: 0vh;
+}
+html{
+    background-color: rgb(222, 211, 240);
+}
+.container{
+    border: 1px solid black;
+    width: 25vh;
+    height: 25vh;
+    background-color: aliceblue;
+}
+#general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15vh;
+}
+#ocultado, input{
+    font-size: 2rem;
+}
+[type='submit']{
+    margin-left: 25vh;
+    margin-top: 5vh;
+}
+#jugador{
+    font-size: 2rem;
+    margin: 14vh;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+#jugadors{
+    font-size: 2rem;
+    margin: 10vh;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}
+.ju{
+    font-size: 2rem;
+    margin-left: 15vh;
+}

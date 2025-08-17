@@ -1,11 +1,4 @@
-#cabecera{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row ;
-  background-color: #83DBDA;
-  padding: 3vh;
-}
+
 html, body{
   height: 100%;
 }
@@ -114,6 +107,44 @@ h1{
   display: block;
   margin: auto;
 }
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #bbdefb;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
@@ -132,12 +163,85 @@ h1{
         .sobre-mi-container p {
             font-size: 1rem;
         }
-  #cabecera {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+  
   a {
     font-size: 2.5vh;
   }
+   .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
     }
+    #general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+#juego{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pinto{
+    border: 1px solid black;
+    width: 8vh;
+    height: 8vh;
+    background-color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+#general2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+}
+.rotacion{
+    transform: rotate(360deg);
+}
+img{
+    width: 25%;
+    height: 35%;
+  
+}
+#pareja{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.intro{
+background-color: greenyellow;
+justify-content: center;
+display: flex;
+align-items: center;
+margin: 10px;
+}
+#colocar{
+    width: 25%;
+    height: 25%;
+   
+}
+#derecha{
+    margin-left: 5%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15%;
+}
+#izquierda{
+    margin-right: 5%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15%;
+
+}

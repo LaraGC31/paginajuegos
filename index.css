@@ -224,6 +224,7 @@ h1{
 #general2 {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 900px;
   padding: 1rem;
@@ -237,6 +238,7 @@ h1{
   gap: 1rem;
   flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.85);
+  
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

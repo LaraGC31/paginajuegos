@@ -69,8 +69,7 @@ function ganar(){
      alert("ACERTASTE");
      pares++;
      puntuacion++;
-     document.getElementById("puntuacion1").textContent = puntuacion;
-    document.getElementById("puntuacion2").textContent = puntuacion;
+    
      if(pares === array.length / 2){
       alert("Has ganado el juego");
      }

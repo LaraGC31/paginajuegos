@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 html, body{
   height: 100%;
@@ -176,6 +182,20 @@ h1{
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
+  #colocar {
+  grid-template-columns: repeat(2, 65px);
+  gap: 0.8rem;
+}
+
+.intro {
+  width: 65px;
+  height: 75px;
+}
+
+.intro img {
+  width: 55px;
+  height: 65px;
+}
     }
     #general{
     display: flex;
@@ -199,49 +219,68 @@ h1{
     cursor: pointer;
     text-align: center;
 }
-#general2{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-   
+/* === Reset general === */
+
+#general2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem;
 }
-.rotacion{
-    transform: rotate(360deg);
+
+/* === Tablero de parejas === */
+#pareja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
-img{
-    width: 25%;
-    height: 35%;
-  
+
+/* === Columnas de cartas === */
+#colocar {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  gap: 1rem;
 }
-#pareja{
-display: flex;
-align-items: center;
-justify-content: center;
+
+/* === Cartas === */
+.intro {
+  background: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  height: 90px;
+}
+
+.intro:hover {
+  transform: scale(1.05);
+  background: #9face6;
+}
+
+/* === Imagen de carta === */
+ .intro img {
+  width: 70px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* === Animación de rotación === */
+.rotacion {
+  transform: rotate(360deg);
+}
 
 
-}
-.intro{
-background-color: greenyellow;
-justify-content: center;
-display: flex;
-align-items: center;
-margin: 10px;
-}
-#colocar{
-    width: 25%;
-    height: 25%;
-   
-}
-#derecha{
-    margin-left: 5%;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 15%;
-}
-#izquierda{
-    margin-right: 5%;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 15%;
 
-}
+

@@ -22,14 +22,16 @@ p {
   font-size: 2.5vh;
   padding: 10px;
 }
-a:hover {
-  color: white;
-  background-color: #333;
-  padding: 5px;
-  border-radius: 5px;
-}
+
 main{
-  background-color: #eeadf4;
+    flex: 1; /* Para que crezca ocupando todo el espacio disponible */
+  min-height: calc(100vh - 120px); /* Altura mínima: toda la pantalla menos header y footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente el contenido */
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
 }
 footer{
   background-color: #5689F2;
@@ -47,12 +49,12 @@ h1{
   padding: 20px;
 }
 #juegos {
-  border: 1px solid black;
+  border: 2px solid black;
   width: 200px;
   height: auto;
   padding: 10px;
   margin: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 .titulo{
@@ -105,13 +107,24 @@ h1{
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-top: 20px;
+     
     }
-    #contenido img {
-  max-width: 50%;
+    .cartas img {
+width: 25%;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 5px;
+
+}
+.cartas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2px;
 }
 /* Header */
 .navbar {
@@ -196,6 +209,23 @@ h1{
   width: 55px;
   height: 65px;
 }
+ .cartas img {
+width: 20%;
+  height: auto;
+  display: block;
+  margin: 2px;
+
+}
+.cartas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+}
     }
     #general{
     display: flex;
@@ -226,7 +256,6 @@ h1{
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 900px;
   padding: 1rem;
 }
 
@@ -236,13 +265,8 @@ h1{
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.85);
-  
+  flex-wrap: wrap;  
   padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  width: 100%;
 }
 
 /* === Columnas de cartas === */
@@ -254,7 +278,7 @@ h1{
 
 /* === Cartas === */
 .intro {
-  background: #f0f0f0;
+  background: #91ec9f;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -268,7 +292,7 @@ h1{
 
 .intro:hover {
   transform: scale(1.05);
-  background: #9face6;
+  background: #f973ab;
 }
 
 /* === Imagen de carta === */
@@ -283,6 +307,12 @@ h1{
   transform: rotate(360deg);
 }
 
+.cartas a:hover{
+background-color: #726fc6;
+color: white;
 
-
-
+}
+.cartas a{
+  background-color: #1de83b;
+  margin: 5px;
+}

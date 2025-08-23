@@ -167,6 +167,10 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
+      iframe{
+        width: 500px;
+        height: auto;
+      }
         #sobre-mi {
             padding: 10px;
         }

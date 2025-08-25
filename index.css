@@ -167,8 +167,8 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
-      #form-container{
-      padding-top: 100%;
+      #form-container iframe{
+      height: 1000px;
       }
         #sobre-mi {
             padding: 10px;
@@ -320,17 +320,16 @@ color: white;
   margin: 5px;
 }
 #form-container {
-  position: relative;
-  width: 100%;
-  padding-top: 150%;
-  /* Ajusta el alto relativo, para móviles 150% suele ir bien */
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+  /* evita que aparezcan barras raras */
 }
 
 #form-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 900px;
+  /* ajusta a lo que realmente ocupa tu form */
   border: none;
 }

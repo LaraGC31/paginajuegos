@@ -168,7 +168,7 @@ width: 25%;
     /* Adaptación responsive */
     @media (max-width: 768px) {
       #form-container iframe{
-      height: 1000px;
+      height: 1200px;
       }
         #sobre-mi {
             padding: 10px;

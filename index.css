@@ -169,6 +169,7 @@ width: 25%;
     @media (max-width: 768px) {
       #form-container iframe{
       height: 1200px;
+      overflow: hidden;
       }
         #sobre-mi {
             padding: 10px;

@@ -169,10 +169,11 @@ width: 25%;
     @media (max-width: 768px) {
     #form-container {
     width: 95%;   /* que no pegue tanto a los bordes */
+    overflow: hidden;
   }
 
   #form-container iframe {
-    min-height: 1200px; /* en móvil el form de Google suele ser más largo */
+    height: 1300px; /* en móvil el form de Google suele ser más largo */
   }
 
         #sobre-mi {

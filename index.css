@@ -339,7 +339,7 @@ color: white;
 /* El iframe del formulario */
 #form-container iframe {
   width: 100%;          /* que se ajuste siempre al ancho */
-  min-height: 800px;   /* altura mínima suficiente */
+  min-height: 1000px;   /* altura mínima suficiente */
   border: none;
 }
 

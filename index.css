@@ -167,6 +167,7 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
+        #te
     #form-container {
     width: 95%;   /* que no pegue tanto a los bordes */
     overflow: hidden;
@@ -343,3 +344,52 @@ color: white;
   border: none;
 }
 
+#ahorcado{
+      font-size: 3vh;
+   background-color: white;
+}
+
+#casillas{
+    font-size: 3vh;
+    margin-top: 7vh;
+    background-color: white;
+
+}
+#letras{
+    font-size: 3vh;
+    margin-top: 7vh;
+    background-color: white;
+
+}
+#mensaje{
+    text-align: center;
+    font-size: 4vh;
+    
+}
+  #teclado {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas para ordenarlo */
+    gap: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  #teclado button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  #teclado button:hover {
+    background: #ddd;
+  }
+
+  #teclado button:disabled {
+    background: #999;
+    cursor: not-allowed;
+  }

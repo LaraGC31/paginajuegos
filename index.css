@@ -167,10 +167,20 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
-      #form-container iframe{
-      height: 1200px;
-      overflow: hidden;
-      }
+  #form-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+  /* evita que aparezcan barras raras */
+}
+
+#form-container iframe {
+  width: 100%;
+  height: 1000px;
+  /* ajusta a lo que realmente ocupa tu form */
+  border: none;
+}
         #sobre-mi {
             padding: 10px;
         }

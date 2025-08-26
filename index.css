@@ -167,20 +167,14 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
-  #form-container {
-  width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
-  overflow: hidden;
-  /* evita que aparezcan barras raras */
-}
+    #form-container {
+    width: 95%;   /* que no pegue tanto a los bordes */
+  }
 
-#form-container iframe {
-  width: 100%;
-  height: 1000px;
-  /* ajusta a lo que realmente ocupa tu form */
-  border: none;
-}
+  #form-container iframe {
+    min-height: 1200px; /* en móvil el form de Google suele ser más largo */
+  }
+
         #sobre-mi {
             padding: 10px;
         }
@@ -330,17 +324,21 @@ color: white;
   background-color: #1de83b;
   margin: 5px;
 }
+/* Contenedor del formulario */
 #form-container {
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 900px;  /* mantiene bien en pantallas grandes */
   margin: 20px auto;
-  overflow: hidden;
-  /* evita que aparezcan barras raras */
+  padding: 0;
+  overflow: hidden;   /* evita scroll horizontal raro */
+  display: flex;
+  justify-content: center;
 }
 
+/* El iframe del formulario */
 #form-container iframe {
-  width: 100%;
-  height: 900px;
-  /* ajusta a lo que realmente ocupa tu form */
+  width: 100%;          /* que se ajuste siempre al ancho */
+  min-height: 800px;   /* altura mínima suficiente */
   border: none;
 }
+

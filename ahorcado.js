@@ -1,4 +1,3 @@
-
 let aleatorio;
 let adivinadas = [];
 let intentos = 0;
@@ -16,7 +15,7 @@ function palabrasAleatorias(){
 
  let palabraGuiones = "";
 for (let i = 0; i < aleatorio.length; i++) {
-    palabraGuiones += "__ ";
+    palabraGuiones += "_";
 }
 
 document.getElementById("casillas").textContent = palabraGuiones;
@@ -39,7 +38,7 @@ function mostrarAhorcadoInicial() {
 function mostrarAhorcadoCabeza() {
     document.getElementById("ahorcado").textContent =
     " ____________\n"+
-    "|/          |\n"+
+    "|/           |\n"+
     "|        | (._.)  |\n"+     
     "|        |   -    |\n"+
     "|        |________|\n"+
@@ -69,7 +68,7 @@ function mostrarAhorcadoConCuello() {
 function mostrarAhorcadoUnBrazo() {
     document.getElementById("ahorcado").textContent =
     " ____________\n"+
-    "|/          |\n"+
+    "|/           |\n"+
     "|        | (._.)  |\n"+     
     "|        |   -    |\n"+
     "|        |________|\n"+
@@ -153,7 +152,7 @@ function comprobar(letra){
     if(adivinadas.includes(ahora)){
         nueva += ahora + "";
     }else{
-        nueva += "__ ";
+        nueva += "_";
         palabraCompletada = false;
     }
    }
@@ -167,7 +166,7 @@ if(palabraCompletada){
 }
 
 if(intentos >= maximo){
-    document.getElementById("ahorcado").hidden = true;
+    document.getElementById("ahorcado").hidden = false;
     document.getElementById("letras").hidden = true;
     document.getElementById("casillas").hidden = true;
     document.getElementById("mensaje").textContent = "Game Over, la palabra era: " + aleatorio + ", pulsa F5 para volver a cargar la página";
@@ -187,36 +186,13 @@ function mostrar() {
 }
 
 function errores(){
-    if(intentos == 1){
-        mostrarAhorcadoCabeza();
-    }else if(intentos == 2){
-        mostrarAhorcadoConCuello();
-    }else if(intentos == 3 ){
-    mostrarAhorcadoUnBrazo();
-    }else if(intentos == 4 ){
-        mostrarAhorcadoDosBrazos();
-    }else if(intentos == 5 ){
-        mostrarAhorcadoUnPie();
-    }else if(intentos == 6){
-        mostrarAhorcadoCompleto();
-    }
+    
+    const imagen = document.getElementById("ahorcado");
+    imagen.src = `img/ahorcado${intentos}.png`; // cambia según los fallos
+
 }
   // Crear teclado en pantalla SOLO si es móvil
-function crearTeclado() {
-  if (window.innerWidth <= 768) { // condición para móvil
-    const teclado = document.getElementById("teclado");
-    const letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");
-    letras.forEach(l => {
-      const btn = document.createElement("button");
-      btn.textContent = l;
-      btn.onclick = () => {
-        comprobar(l);
-        btn.disabled = true; // desactiva botón al usarlo
-      };
-      teclado.appendChild(btn);
-    });
-  }
-}
+
   function crearTeclado() {
       const teclado = document.getElementById("teclado");
       const letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");

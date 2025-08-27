@@ -5,7 +5,7 @@ let bomba = "💣";
 let descubiertas = 0;
 let totalSeguras = 0;
 let v = "💧";
-&& && && 
+
 function construir(){
 for(let i = 0; i < valorNum; i++){
     for(let j = 0; j <= valorNum; j++){

@@ -167,7 +167,7 @@ width: 25%;
 
     /* Adaptación responsive */
     @media (max-width: 768px) {
-        #te
+    
     #form-container {
     width: 95%;   /* que no pegue tanto a los bordes */
     overflow: hidden;
@@ -347,8 +347,8 @@ color: white;
 #ahorcado{
       font-size: 3vh;
    background-color: white;
+   width: 150px;
 }
-
 #casillas{
     font-size: 3vh;
     margin-top: 7vh;

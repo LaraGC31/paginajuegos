@@ -393,3 +393,54 @@ color: white;
     background: #999;
     cursor: not-allowed;
   }
+  #tres{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+.posicion {
+  width: 90px;
+  height: 90px;
+  margin: 8px;
+  border-radius: 15px;             /* esquinas redondeadas */
+  background: linear-gradient(145deg, #9e9e9e, #7d7d7d); /* efecto metálico */
+  box-shadow: 5px 5px 12px #5a5a5a,
+              -5px -5px 12px #bcbcbc; /* efecto relieve */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; /* animación suave */
+}
+
+.posicion:hover {
+  transform: scale(1.1); /* un poco más grande al pasar el ratón */
+  box-shadow: 8px 8px 16px #5a5a5a,
+              -8px -8px 16px #bcbcbc;
+}
+
+/* Jugadores */
+.jugador1 {
+  background: linear-gradient(145deg, #4CAF50, #45A049); /* verde degradado */
+  color: white;
+}
+
+.jugador2 {
+  background: linear-gradient(145deg, #E63946, #B22222); /* rojo degradado */
+  color: white;
+}
+#resetear{
+  width: 35%;
+  background-color: #5CB6E7;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+#ganador{
+  margin-top: 15px;
+}

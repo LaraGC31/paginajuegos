@@ -169,7 +169,7 @@ if(intentos >= maximo){
     document.getElementById("ahorcado").hidden = false;
     document.getElementById("letras").hidden = true;
     document.getElementById("casillas").hidden = true;
-    document.getElementById("mensaje").textContent = "Game Over, la palabra era: " + aleatorio + ", pulsa F5 para volver a cargar la página";
+    document.getElementById("mensaje").textContent = "Game Over, la palabra era: " + aleatorio;
    GameOver = true;
 
 }
@@ -213,7 +213,9 @@ window.onload = function(){
     palabrasAleatorias();
  mostrarAhorcadoInicial();
   crearTeclado(); 
-
+    document.getElementById("resetear").addEventListener("click", function(){
+        window.location.reload();
+    });
 
 }
 

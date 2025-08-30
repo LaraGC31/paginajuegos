@@ -84,6 +84,9 @@ function ganar(){
 }
  window.onload = function(){
    iniciar();
+       document.getElementById("resetear").addEventListener("click", function() {
+      window.location.reload();
+    });
  }
     
 

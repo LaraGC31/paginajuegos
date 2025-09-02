@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+   height: 100%; 
+background-color: rgb(243, 208, 163);
+}
+ #der{
+    background-color: black;
+    border-top-left-radius: 30vh;
+    border-bottom-left-radius:30vh;
+   
+ }
+ #izq{
+    background-color: black;
+    border-top-right-radius: 30vh;
+    border-bottom-right-radius:30vh;
+   
+
+ }
+#principal{
+    display: flex;
+    align-items: center;
+ justify-content: center;
+ height: 80%;
+}
+#contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+      height: 20%;
+    
+     
+}
+.simon{
+width: 30vh;
+height: 30vh;
+border: 1px solid black;
+margin: 2vh;
+}
+.verde{
+    border-top-left-radius: 30vh;
+    background-color: greenyellow;
+
+}
+.rojo{
+    border-top-right-radius: 30vh;
+    background-color: red;
+}
+.amarillo{
+    border-bottom-left-radius:30vh;
+    background-color: yellow;
+}
+.azul{
+    border-bottom-right-radius:30vh;
+    background-color: blue;
+}
+#redondo{
+width: 32vh;
+height: 32vh;
+border-radius: 50%;
+border: 1vh solid black;
+position: absolute;
+background-color:  black;
+color: white;
+font-size: 7vh;
+text-align: center;
+padding-top: 10vh ;
+}
+#palabra{
+    text-align: center;
+    font-size: 4vh;
+    margin: 5vh;
+}
+#juego{
+    font-size: 3vh;
+    text-align: center;
+   width: 25vh;
+   height: 10vh;
+   border-radius: 25%;
+}
+#juego:hover{
+    background-color: rgb(8, 123, 18);
+}
